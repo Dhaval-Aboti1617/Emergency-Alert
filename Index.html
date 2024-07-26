@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Alert</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .button { padding: 15px 30px; margin: 10px; border: none; color: #fff; cursor: pointer; }
+        .fire { background-color: red; }
+        .medical { background-color: blue; }
+        .abnormal { background-color: yellow; color: #000; }
+    </style>
+</head>
+<body>
+    <h1>Emergency Alert</h1>
+    <button class="button fire" onclick="sendAlert('fire')">Fire Alert</button>
+    <button class="button medical" onclick="sendAlert('medical')">Medical Alert</button>
+    <button class="button abnormal" onclick="sendAlert('abnormal')">Abnormal Alert</button>
+ 
+    <script>
+        function sendAlert(type) {
+            alert("Emergency alert: " + type + " alert triggered!");
+            // Here you can add code to send a notification or buzzer alert
+        }
+    </script>
+</body>
+</html>
